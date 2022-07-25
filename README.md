@@ -24,6 +24,8 @@ stable          https://charts.helm.sh/stable
 hashicorp       https://helm.releases.hashicorp.com
 
 
+# if you want to install helm in other context, then use --kube-context=otherCluster
+
 root@dev-server01:~# helm install --values values.yaml consul hashicorp/consul --create-namespace --namespace consul --version "0.43.0"
 NAME: consul
 LAST DEPLOYED: Mon Jul 25 21:24:11 2022
